@@ -1,24 +1,25 @@
-<h1>Geocacher Location</h1>
-<form>
-  <div class="form-group">
-    <label for="address">Address</label>
-    <input type=address #geocacherAddress>
-  </div>
-  <button (click)="getGeocacherLongLat(geocacherAddress.value)">Get Long & Lat</button>
-  <div *ngIf="latLngObject">
-    Latitude: {{ latLngObject.lat }} - Longitude: {{ latLngObject.lng }}
-  </div>
-</form>
+<h1>Geocacher Location Finder</h1>
 
-<form>
-  <div class="form-group">
-    <label for="lat">Latitude</label>
-    <input type=lat #geocacherLat>
-    <label for="lng">Longitude</label>
-    <input type=lng #geocacherLng>
-  </div>
-  <button (click)="getGeocacherAddress(geocacherLat.value, geocacherLng.value)">Get Address</button>
-  <div *ngIf="addressObject">
-    Address: {{ addressObject.formatted_address }}
-  </div>
-</form>
+  <form>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type=address #geocacherAddress>
+    </div>
+    <button (click)="getGeocacherLongLat(geocacherAddress.value)">Get Long & Lat</button>
+    <div *ngIf="latLngObject">
+      Latitude: {{ latLngObject.lat }} - Longitude: {{ latLngObject.lng }}
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <label for="lat">Latitude</label>
+      <input type=lat #geocacherLat>
+      <label for="lng">Longitude</label>
+      <input type=lng #geocacherLng>
+    </div>
+    <button (click)="getGeocacherAddress(geocacherLat.value, geocacherLng.value)">Get Address</button>
+    <div *ngIf="addressObject">
+      Address: {{ addressObject.formatted_address }}
+    </div>
+  </form>
