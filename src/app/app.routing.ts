@@ -1,12 +1,12 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { RoverFormComponent } from './rover-form/rover-form.component';
+import { GeocacherFormComponent } from './geocacher-form/geocacher-form.component';
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: RoverFormComponent
-  // },
+  {
+    path: '',
+    component: GeocacherFormComponent
+  },
 ]
 
 

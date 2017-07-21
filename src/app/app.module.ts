@@ -5,10 +5,13 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
+import { GeocacherApiService } from './geocacher-api.service';
+import { GeocacherFormComponent } from './geocacher-form/geocacher-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GeocacherFormComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [ GeocacherApiService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
