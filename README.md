@@ -20,7 +20,7 @@ To download and run this project:
 2. Run $ npm install.
 3. Sign up for a api key at https://developers.google.com/maps/documentation/geocoding/start
 4. Click _Get A Key_
-5. Add app.app-keys.ts to app folder w/ the following code: export const apiKey = 'your api key'
+5. Add app.app-keys.ts to app folder w/ the following code: export const geoKey = 'your api key'
 6. ng serve to get http://localhost:4200/
 
 ## Support and contact details
