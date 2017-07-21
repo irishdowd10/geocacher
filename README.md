@@ -17,7 +17,7 @@ This is a web application that will allow user to: 1 -  enter a longitude and la
 
 To download and run this project:
 1. Clone this repository to your desktop: https://github.com/irishdowd10/geocacher.git
-2. Run {$ npm install}.
+2. Run $ npm install.
 3. Sign up for a api key at https://developers.google.com/maps/documentation/geocoding/start
 4. Click _Get A Key_
 5. Add app.app-keys.ts to app folder w/ the following code: export const apiKey = 'your api key'
